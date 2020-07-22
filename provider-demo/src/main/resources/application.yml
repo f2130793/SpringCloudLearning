@@ -1,0 +1,11 @@
+server:
+  port: 8101
+
+spring:
+  application:
+    name: provider-demo-server
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://replica1:8002/eureka/,http://replica2:8003/eureka/

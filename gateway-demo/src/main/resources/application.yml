@@ -1,0 +1,43 @@
+server:
+  port: 8121
+
+spring:
+  application:
+    name: gateway-demo-server
+
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true # 开启从注册中心动态创建路由的功能
+          lower-case-service-id: true #使用小写服务名，默认是大写
+      routes:
+        - id: path_route
+          uri: lb://provider-demo-server/test/say1/{id}
+          predicates:
+            - Path=/test/{id}
+
+        - id: prefixpath_route
+          uri: lb://provider-demo-server
+          predicates:
+            - Method=GET
+          filters:
+            - PrefixPath=/test
+
+        - id: hystrix_route
+          uri: http://localhost:8101
+          predicates:
+            - Method=GET
+          filters:
+            - name: Hystrix
+              args:
+                name: fallbackcmd
+                fallbackUri: forward:/fallback
+eureka:
+  client:
+    service-url:
+      defaultZone: http://replica1:8002/eureka/,http://replica2:8003/eureka/
+
+logging:
+  level:
+    org.springframework.cloud.gateway: debug

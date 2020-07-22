@@ -1,0 +1,15 @@
+server:
+  port: 8301
+
+spring:
+  application:
+    name: consumer-demo-server
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://replica1:8002/eureka/,http://replica2:8003/eureka/

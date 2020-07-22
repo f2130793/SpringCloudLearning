@@ -1,0 +1,15 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: eureka-server
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    fetch-registry: false  #是否从注册中心拉取服务
+    register-with-eureka: false # 是否要注册到注册中心
+  server:
+    enable-self-preservation: false  # 关闭保护模式

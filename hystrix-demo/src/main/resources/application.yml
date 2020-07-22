@@ -1,0 +1,16 @@
+server:
+  port: 8111
+
+spring:
+  application:
+    name: hystrix-demo-server
+
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://replica1:8002/eureka/,http://replica2:8003/eureka/
