@@ -12,27 +12,27 @@ spring:
           enabled: true # 开启从注册中心动态创建路由的功能
           lower-case-service-id: true #使用小写服务名，默认是大写
       routes:
-        - id: path_route
-          uri: lb://provider-demo-server/test/say1/{id}
-          predicates:
-            - Path=/test/{id}
-
-        - id: prefixpath_route
-          uri: lb://provider-demo-server
-          predicates:
-            - Method=GET
-          filters:
-            - PrefixPath=/test
+#        - id: path_route
+#          uri: lb://provider-demo-server/test/say1/{id}
+#          predicates:
+#            - Path=/test/{id}
+#
+#        - id: prefixpath_route
+#          uri: lb://provider-demo-server
+#          predicates:
+#            - Method=GET
+#          filters:
+#            - PrefixPath=/test
 
         - id: hystrix_route
-          uri: http://localhost:8101
+          uri: lb://provider-demo-server
           predicates:
-            - Method=GET
+            - Path=/provider-demo-server/**
           filters:
             - name: Hystrix
               args:
                 name: fallbackcmd
-                fallbackUri: forward:/fallback
+                fallbackUri: 'forward:/fallback'
 eureka:
   client:
     service-url:
