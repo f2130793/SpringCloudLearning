@@ -1,0 +1,24 @@
+spring:
+  kafka:
+    bootstrap-servers: wutaodeMacBook-Pro.local:9092
+
+    producer:
+      retries: 5
+      acks: all
+      batch-size: 16384
+      buffer-memory: 33554432
+ #     transaction-id-prefix: transaction-id-
+      key-serializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-serializer: org.apache.kafka.common.serialization.StringDeserializer
+      properties:
+        enable:
+          idempotence: true
+
+    consumer:
+      group-id: group1
+      auto-offset-reset: earliest
+      enable-auto-commit: true
+      auto-commit-interval: 100
+      isolation-level: read_committed
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer

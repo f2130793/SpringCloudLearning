@@ -15,6 +15,7 @@
         <module>seata-order</module>
         <module>seata-storage</module>
         <module>seata-account</module>
+        <module>kafka</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
