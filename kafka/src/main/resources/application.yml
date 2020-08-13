@@ -1,3 +1,6 @@
+server:
+  port: 8701
+
 spring:
   kafka:
     bootstrap-servers: wutaodeMacBook-Pro.local:9092
@@ -7,9 +10,9 @@ spring:
       acks: all
       batch-size: 16384
       buffer-memory: 33554432
- #     transaction-id-prefix: transaction-id-
-      key-serializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-serializer: org.apache.kafka.common.serialization.StringDeserializer
+      transaction-id-prefix: transaction-id-
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
       properties:
         enable:
           idempotence: true

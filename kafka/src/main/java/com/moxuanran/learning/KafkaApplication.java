@@ -6,7 +6,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.annotation.KafkaListeners;
 
-import java.io.IOException;
 
 /**
  * @author 莫轩然
@@ -16,16 +15,11 @@ import java.io.IOException;
 public class KafkaApplication {
     public static void main(String[] args) {
         SpringApplication.run(KafkaApplication.class, args);
-        try {
-            int read = System.in.read();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 
     @KafkaListeners(
             value = {
-                    @KafkaListener(topics = {"topic01"})
+                    @KafkaListener(topics = {"topic01"},groupId = "group1")
             }
     )
     public void recevice01(ConsumerRecord<String,String> record){
