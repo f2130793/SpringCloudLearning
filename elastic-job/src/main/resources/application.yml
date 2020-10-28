@@ -1,0 +1,16 @@
+elasticjob:
+  reg-center:
+    server-lists: 127.0.0.1:2181
+
+  jobs:
+    simplJob:
+      elasticJobClass: com.moxuanran.learning.job.MyJob
+      cron: 0/5 * * * * ?
+      shardingTotalCount: 5
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:job_event_storage
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:

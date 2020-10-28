@@ -17,6 +17,8 @@
         <module>seata-account</module>
         <module>kafka</module>
         <module>jaeger</module>
+        <module>message-dingding</module>
+        <module>elastic-job</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
