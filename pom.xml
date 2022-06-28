@@ -19,6 +19,7 @@
         <module>jaeger</module>
         <module>message-dingding</module>
         <module>elastic-job</module>
+        <module>netty</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
