@@ -1,5 +1,7 @@
 package com.moxuanran.learning.controller;
 
+import com.alibaba.fastjson.JSON;
+import com.google.gson.JsonObject;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,7 +15,7 @@ import java.util.Map;
 @RestController
 public class FallbackController {
     @GetMapping("/fallback")
-    public Object fallback(){
+    public Object fallback() {
 //        Map<String,Object> result = new HashMap<>();
 //        result.put("data",null);
 //        result.put("message","get request fallback");

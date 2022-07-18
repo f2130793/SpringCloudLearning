@@ -12,37 +12,15 @@ import java.util.Date;
 @Data
 @TableName(value = "users")
 public class User {
-    private Integer id;
+    private Long id;
 
-    private String name;
+    private String userName;
 
-    private String truename;
+    private String nickName;
 
-    private String email;
+    private Integer age;
 
-    private String mobile;
-
-    private String password;
-
-    private String officeArea;
-
-    private String saleTel;
-
-    private String erpUuid;
-
-    private Date createdAt;
-
-    private Date updatedAt;
-
-    private Date deletedAt;
-
-    private Date lastLoginAt;
-
-    private String verificationToken;
-
-    private Date verificationTokenExpire;
-
-    private String state;
+    private String userSex;
 
     private static final long serialVersionUID = 1L;
 }
