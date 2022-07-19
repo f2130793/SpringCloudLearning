@@ -9,10 +9,11 @@ spring:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
 #切换成eureka
 #eureka:
 #  client:
 #    service-url:
 #      defaultZone: http://replica1:8002/eureka/,http://replica2:8003/eureka/
-
-

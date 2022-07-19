@@ -6,7 +6,6 @@ import com.moxuanran.learning.entity.vo.ExampleRpcVo;
 import com.moxuanran.learning.po.Example;
 import com.moxuanran.learning.service.ExampleService;
 import com.moxuran.learning.JsonResult;
-import com.zoi7.component.core.exception.NotFoundException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,7 +45,7 @@ public class ExampleClientImpl implements ExampleClient {
     public JsonResult<ExampleRpcVo> getExample(Long id) {
         Example example = exampleService.findById(id);
         if (example == null) {
-            throw new NotFoundException("example不存在");
+            return null;
         }
         ExampleRpcVo exampleRpcVo = new ExampleRpcVo();
         BeanUtils.copyProperties(example, exampleRpcVo);

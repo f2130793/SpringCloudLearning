@@ -3,13 +3,18 @@ server:
 
 spring:
   application:
-    name: consumer-demo-server
+    name: consumer-demo
   cloud:
     loadbalancer:
       ribbon:
         enabled: false
+    #切换成nacos
 
-eureka:
-  client:
-    service-url:
-      defaultZone: http://replica1:8002/eureka/,http://replica2:8003/eureka/
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://replica1:8002/eureka/,http://replica2:8003/eureka/

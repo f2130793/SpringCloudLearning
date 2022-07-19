@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author 莫轩然
  * @date 2022/7/18 15:58
  */
-@FeignClient(value = "provider-demo",contextId = "/provider")
+@FeignClient(value = "provider-demo")
 public interface ExampleClient {
     @GetMapping("example/hello")
     JsonResult<String> hello(@RequestParam("msg") String msg);
