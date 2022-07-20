@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 /**
  * 公共错误码
- * @author wuqiang
+ * @author wutao
  */
 public enum ErrorCode implements IErrorEnum {
 

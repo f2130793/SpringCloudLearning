@@ -25,7 +25,7 @@ import java.util.List;
 /**
  * 公共异常配置
  *
- * @author wuqiang
+ * @author wutao
  */
 public class ExConfigure extends BaseSerializable implements InitializingBean, EnvironmentAware {
 

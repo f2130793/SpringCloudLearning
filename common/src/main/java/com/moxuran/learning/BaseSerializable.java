@@ -5,8 +5,12 @@ import com.zoi7.component.core.base.BaseClass;
 
 import java.io.Serializable;
 
+
 /**
- * @author wuqiang
+ * 基地可串行化
+ *
+ * @author wutao
+ * @date 2022/07/20
  */
 public abstract class BaseSerializable extends BaseClass implements Serializable {
 

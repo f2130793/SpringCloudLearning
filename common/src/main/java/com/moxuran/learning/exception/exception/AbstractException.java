@@ -10,7 +10,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
- * @author yjy
+ * @author wutao
  * @date 2020/7/6 12:17
  **/
 public abstract class AbstractException extends RuntimeException {

@@ -2,7 +2,7 @@ package com.moxuran.learning.exception.core;
 
 /**
  * 错误码枚举接口
- * @author wuqiang
+ * @author wutao
  */
 public interface IErrorEnum {
 

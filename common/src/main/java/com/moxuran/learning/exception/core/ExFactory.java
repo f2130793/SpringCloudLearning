@@ -11,7 +11,7 @@ import java.util.Objects;
 /**
  * 错误码定义仓库
  *
- * @author wuqiang
+ * @author wutao
  */
 public class ExFactory {
 

@@ -8,7 +8,7 @@ import java.util.regex.Pattern;
 /**
  * 文案定义
  *
- * @author wuqiang
+ * @author wutao
  */
 public class Copyright extends BaseSerializable {
 

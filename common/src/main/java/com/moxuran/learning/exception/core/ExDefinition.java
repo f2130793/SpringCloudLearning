@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 /**
  * 错误码定义
  *
- * @author wuqiang
+ * @author wutao
  */
 public class ExDefinition extends BaseSerializable {
 

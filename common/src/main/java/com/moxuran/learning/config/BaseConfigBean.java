@@ -2,9 +2,11 @@ package com.moxuran.learning.config;
 
 
 /**
- * @author yjy
- * @date 2020/9/1 10:54
- **/
+ * 基础配置bean
+ *
+ * @author wutao
+ * @date 2022/07/20
+ */
 public class BaseConfigBean {
 
     /** 当前环境 */

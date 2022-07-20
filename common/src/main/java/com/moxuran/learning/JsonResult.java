@@ -11,13 +11,12 @@ import com.moxuran.learning.exception.core.ExFactory;
 import com.moxuran.learning.exception.core.ExType;
 import com.moxuran.learning.exception.core.IErrorEnum;
 
+
 /**
- * <p>
- * 被访问时响应的数据结构
- * </p>
+ * json结果
  *
- * @author jiang
- * @date 2019-11-02 10:35
+ * @author wutao
+ * @date 2022/07/20
  */
 // 规避jackson反序列化问题
 @JsonIgnoreProperties(ignoreUnknown = true)

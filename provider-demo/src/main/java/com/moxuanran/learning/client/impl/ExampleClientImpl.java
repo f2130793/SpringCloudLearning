@@ -9,22 +9,25 @@ import com.moxuran.learning.JsonResult;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @author yjy
+ * @author wutao
  * @date 2019/12/16 14:08
  **/
 @Slf4j
 @RestController
 public class ExampleClientImpl implements ExampleClient {
+    @Value("${server.port}")
+    String port;
 
     @Autowired
     private ExampleService exampleService;
 
     @Override
     public JsonResult<String> hello(String msg) {
-        String reply = "received msg: " + msg;
+        String reply = "received msg: " + msg + "端口是：" + port;
         return JsonResult.success(reply);
     }
 

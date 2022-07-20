@@ -6,37 +6,49 @@ spring:
     name: gateway-demo-server
 
   cloud:
+    #切换成nacos
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
     gateway:
       discovery:
         locator:
           enabled: true # 开启从注册中心动态创建路由的功能
           lower-case-service-id: true #使用小写服务名，默认是大写
       routes:
-#        - id: path_route
-#          uri: lb://provider-demo-server/test/say1/{id}
-#          predicates:
-#            - Path=/test/{id}
-#
+        - id: provider-demo
+          uri: lb://provider-demo
+          predicates:
+            - Path=/api/provider-demo/**
+          filters:
+            - RewritePath=/api/provider-demo/(?<segment>.*),/$\{segment}
+        - id: consumer-demo
+          uri: lb://consumer-demo
+          predicates:
+            - Path=/api/consumer-demo/**
+          filters:
+            - RewritePath=/api/consumer-demo/(?<segment>.*),/$\{segment}
+
 #        - id: prefixpath_route
-#          uri: lb://provider-demo-server
+#          uri: lb://provider-demo
 #          predicates:
 #            - Method=GET
 #          filters:
 #            - PrefixPath=/test
-
-        - id: hystrix_route
-          uri: lb://provider-demo-server
-          predicates:
-            - Path=/provider-demo-server/**
-          filters:
-            - name: Hystrix
-              args:
-                name: fallbackcmd
-                fallbackUri: 'forward:/fallback'
-eureka:
-  client:
-    service-url:
-      defaultZone: http://replica1:8002/eureka/,http://replica2:8003/eureka/
+#
+#        - id: hystrix_route
+#          uri: lb://provider-demo
+#          predicates:
+#            - Path=/provider-demo**
+#          filters:
+#            - name: Hystrix
+#              args:
+#                name: fallbackcmd
+#                fallbackUri: 'forward:/fallback'
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://replica1:8002/eureka/,http://replica2:8003/eureka/
 
 logging:
   level:

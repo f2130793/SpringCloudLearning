@@ -1,7 +1,11 @@
 package com.moxuran.learning.exception.core;
 
 /**
+ * 前女友类型
  * 异常分类
+ *
+ * @author wutao
+ * @date 2022/07/20
  */
 public enum ExType {
 

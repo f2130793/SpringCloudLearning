@@ -6,7 +6,7 @@ import com.moxuran.learning.exception.core.ExDefinition;
 /**
  * 服务异常
  *
- * @author wuqiang
+ * @author wutao
  */
 public class SystemException extends AbstractException {
 
