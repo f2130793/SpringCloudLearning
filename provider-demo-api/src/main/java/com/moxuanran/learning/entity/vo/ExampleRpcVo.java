@@ -18,5 +18,4 @@ public class ExampleRpcVo {
     private Integer sex;
 
     private Date birthday;
-
 }

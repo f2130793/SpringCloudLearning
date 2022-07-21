@@ -1,5 +1,6 @@
 package com.moxuanran.learning.po;
 
+import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.zoi7.component.core.base.BaseEntity;
@@ -20,7 +21,7 @@ import java.util.Date;
 @TableName("example")
 public class Example extends BaseEntity {
 
-    @TableId
+    @TableId(type = IdType.AUTO)
     private Long id;
 
     private String name;
@@ -28,5 +29,7 @@ public class Example extends BaseEntity {
     private Integer sex;
 
     private Date birthday;
+
+    private String phone;
 
 }

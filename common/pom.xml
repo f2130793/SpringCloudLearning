@@ -8,7 +8,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1-RELEASE</version>
 
     <artifactId>common</artifactId>
 
@@ -79,9 +79,9 @@
     <distributionManagement>
         <repository>
             <!--id的名字可以任意取，但是在setting文件中的属性<server>的ID与这里一致-->
-            <id>nexus</id>
+            <id>releases</id>
             <!--指向仓库类型为host(宿主仓库）的储存类型为Release的仓库-->
-            <url>http://dev1.shangjinuu.com:8081/nexus/content/groups/public/</url>
+            <url>http://dev1.shangjinuu.com:8081/nexus/content/repositories/releases/</url>
         </repository>
         <snapshotRepository>
             <id>snapshots</id>
