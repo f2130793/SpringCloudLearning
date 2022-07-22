@@ -10,7 +10,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  * @author 莫轩然
  * @date 2020/7/15 11:16
  */
-@EnableDiscoveryClient
+@EnableDiscoveryClient()
 @SpringBootApplication
 @EnableFeignClients(basePackages = "com.moxuanran")
 @EnableSwagger2
