@@ -22,6 +22,7 @@
         <module>netty</module>
         <module>provider-demo-api</module>
         <module>common</module>
+        <module>sentinel-demo</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
