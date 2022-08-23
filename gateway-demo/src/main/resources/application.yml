@@ -53,3 +53,6 @@ spring:
 logging:
   level:
     org.springframework.cloud.gateway: debug
+
+mobile:
+  provider: iphone
