@@ -1,4 +1,4 @@
-package com.moxuanran.learning.Server;
+package com.moxuanran.learning.server;
 
 import com.moxuanran.learning.handler.EchoServerHandler;
 import io.netty.bootstrap.ServerBootstrap;

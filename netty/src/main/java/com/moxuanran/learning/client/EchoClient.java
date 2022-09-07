@@ -1,4 +1,4 @@
-package com.moxuanran.learning;
+package com.moxuanran.learning.client;
 
 import com.moxuanran.learning.handler.EchoClientHandler;
 import io.netty.bootstrap.Bootstrap;
