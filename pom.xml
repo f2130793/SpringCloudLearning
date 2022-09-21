@@ -23,6 +23,7 @@
         <module>provider-demo-api</module>
         <module>common</module>
         <module>sentinel-demo</module>
+        <module>lambda</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
