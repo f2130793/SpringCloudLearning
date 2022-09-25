@@ -8,7 +8,7 @@ import static java.util.stream.Collectors.*;
  * @author 莫轩然(wutao07)
  * @date 2022/9/21 19:12
  */
-public class Test {
+public class LambdaTest {
     public static void main(String[] args) {
         List<Dish> menu = Menu.getMenu();
         Comparator<Dish> dishCaloriesComparator = Comparator.comparingInt(Dish::getCalories);
@@ -27,6 +27,11 @@ public class Test {
         //字符串拼接
         String shortMenu = menu.stream().map(Dish::getName).collect(joining(","));
         System.out.println(shortMenu);
-        //
+        //分组groupingBy
+        Map<Dish.Type, List<Dish>> groupBy = menu.stream().collect(groupingBy(Dish::getType));
+        System.out.println(groupBy);
+        //分区
+        Map<Boolean, List<Dish>> partitionBy = menu.stream().collect(partitioningBy(Dish::isVegetarian));
+        System.out.println(partitionBy);
     }
 }
