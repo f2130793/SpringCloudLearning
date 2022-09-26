@@ -25,6 +25,7 @@
         <module>sentinel-demo</module>
         <module>lambda</module>
         <module>code-thought</module>
+        <module>cache</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
