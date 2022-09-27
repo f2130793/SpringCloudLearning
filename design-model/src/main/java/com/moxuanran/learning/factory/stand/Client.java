@@ -1,6 +1,8 @@
 package com.moxuanran.learning.factory.stand;
 
 /**
+ * 标准工厂模式
+ *
  * @author wutao
  * @date 2022/9/27 10:07
  */

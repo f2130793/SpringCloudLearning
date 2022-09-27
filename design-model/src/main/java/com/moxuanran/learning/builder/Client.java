@@ -1,6 +1,8 @@
 package com.moxuanran.learning.builder;
 
 /**
+ * 建造者模式
+ *
  * @author wutao
  * @date 2022/9/27 14:12
  */

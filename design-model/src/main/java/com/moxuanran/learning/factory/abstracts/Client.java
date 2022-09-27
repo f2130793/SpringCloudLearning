@@ -1,6 +1,8 @@
 package com.moxuanran.learning.factory.abstracts;
 
 /**
+ * 抽象工厂模式
+ *
  * @author wutao
  * @date 2022/9/27 10:44
  */

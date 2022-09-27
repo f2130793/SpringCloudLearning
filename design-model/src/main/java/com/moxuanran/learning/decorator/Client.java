@@ -2,6 +2,7 @@ package com.moxuanran.learning.decorator;
 
 
 /**
+ *装饰模式
  * @author wutao
  * @date 2022/9/27 14:58
  */

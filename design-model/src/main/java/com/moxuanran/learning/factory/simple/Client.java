@@ -3,6 +3,8 @@ package com.moxuanran.learning.factory.simple;
 import java.util.Random;
 
 /**
+ * 简单工厂模式
+ *
  * @author wutao
  * @date 2022/9/27 09:40
  */
