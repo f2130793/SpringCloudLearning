@@ -16,6 +16,7 @@ public class Director {
     }
 
     public Building direct() {
+        //Director主要用于控制流程
         System.out.println("===工程项目启动===");
         builder.buildBasement();
         builder.buildWall();
