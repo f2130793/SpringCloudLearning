@@ -27,6 +27,7 @@
         <module>code-thought</module>
         <module>cache</module>
         <module>design-model</module>
+        <module>netease-test</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
