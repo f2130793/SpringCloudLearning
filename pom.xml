@@ -26,6 +26,7 @@
         <module>lambda</module>
         <module>code-thought</module>
         <module>cache</module>
+        <module>design-model</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
