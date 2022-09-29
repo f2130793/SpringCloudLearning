@@ -1,5 +1,7 @@
 package com.moxuanran.learning.mysql;
 
+import org.springframework.stereotype.Service;
+
 import java.util.List;
 
 /**
@@ -8,6 +10,7 @@ import java.util.List;
  * @author wutao
  * @date 2022/9/29 16:13
  */
+@Service
 public class RunnerServiceImpl implements RunnerService{
     @Override
     public Runner getRunner(String ip) {

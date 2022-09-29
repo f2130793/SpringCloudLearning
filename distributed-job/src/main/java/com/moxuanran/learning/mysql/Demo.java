@@ -1,5 +1,7 @@
 package com.moxuanran.learning.mysql;
 
+import org.springframework.stereotype.Component;
+
 import java.util.Collection;
 import java.util.List;
 
@@ -7,6 +9,7 @@ import java.util.List;
  * @author wutao
  * @date 2022/9/29 16:15
  */
+@Component
 public class Demo extends AbstractRunWorker<DemoModel> implements RunWorker{
     /**
      * 加载对应的runnerId的任务数据
