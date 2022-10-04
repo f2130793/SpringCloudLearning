@@ -26,6 +26,9 @@
         <module>lambda</module>
         <module>code-thought</module>
         <module>cache</module>
+        <module>design-model</module>
+        <module>netease-test</module>
+        <module>distributed-job</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
