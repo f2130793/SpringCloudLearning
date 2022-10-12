@@ -29,6 +29,7 @@
         <module>design-model</module>
         <module>netease-test</module>
         <module>distributed-job</module>
+        <module>effective-java</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
