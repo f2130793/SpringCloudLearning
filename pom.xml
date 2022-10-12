@@ -30,6 +30,7 @@
         <module>netease-test</module>
         <module>distributed-job</module>
         <module>effective-java</module>
+        <module>formatter-spring-boot-starter</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
