@@ -17,7 +17,7 @@ import java.util.stream.IntStream;
 import java.util.stream.LongStream;
 
 /**
- * 预生成900个数，而后采用10个线程新增100个数，总共生成1000个数
+ * https://time.geekbang.org/column/article/209494
  *
  * @author wutao
  * @date 2022/10/12 17:04

@@ -1,6 +1,5 @@
 package com.moxuanran.learning;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -16,7 +15,6 @@ public class TestController {
     public String upload(@RequestParam("file") MultipartFile file) throws Exception {
         String appKey = "";
         String secret = "";
-//        String url = "https://bcgateway-test.apps-qa.danlu.netease.com/common/v1/upload";
         String url = "http://127.0.0.1:8080/common/v1/upload";
 
         ClientDemo.postFile(appKey,secret,url,file);
