@@ -12,8 +12,8 @@ import java.util.Map;
 /**
  * 缓存JDK代理handler
  *
- * @author wutao
- * @date 2020/4/15 13:30
+ * @author moxuanran 
+ * 
  */
 @AllArgsConstructor
 public class CacheInvocationHandler implements InvocationHandler {

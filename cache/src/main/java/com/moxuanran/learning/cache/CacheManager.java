@@ -8,8 +8,8 @@ import java.util.function.Function;
 /**
  * cache管理器
  *
- * @author wutao
- * @date 2020/4/13 9:59
+ * @author moxuanran 
+ * 
  */
 public class CacheManager {
 

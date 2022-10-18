@@ -17,8 +17,8 @@ import java.util.function.Function;
 /**
  * Abstract缓存
  *
- * @author wutao
- * @date 2020/4/21 12:56
+ * @author moxuanran 
+ *  2020/4/21 12:56
  */
 @Slf4j
 public abstract class AbstractCache<K, V> implements ICache<K, V> {

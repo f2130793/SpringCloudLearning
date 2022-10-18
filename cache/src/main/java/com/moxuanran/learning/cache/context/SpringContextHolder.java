@@ -7,8 +7,8 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
 
 /**
- * @author wutao
- * @date 2020/3/24 14:40
+ * @author moxuanran 
+ * 
  */
 @Component
 public class SpringContextHolder implements ApplicationContextAware, DisposableBean {

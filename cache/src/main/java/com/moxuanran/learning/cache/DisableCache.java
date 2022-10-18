@@ -13,8 +13,8 @@ import java.util.function.Function;
 /**
  * 关闭缓存时使用
  *
- * @author wutao
- * @date 2020/4/13 20:31
+ * @author moxuanran 
+ * 
  */
 public class DisableCache<K, V> implements ICache<K, V> {
 

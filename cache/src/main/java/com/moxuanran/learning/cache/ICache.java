@@ -17,8 +17,8 @@ import java.util.stream.Collectors;
 /**
  * 缓存接口
  *
- * @author wutao
- * @date 2020/4/10 15:49
+ * @author moxuanran 
+ * 
  */
 public interface ICache<K, V> {
 

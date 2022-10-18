@@ -7,8 +7,8 @@ import lombok.Data;
 /**
  * 局部缓存配置
  *
- * @author wutao
- * @date 2020/4/10 17:35
+ * @author moxuanran 
+ * 
  */
 @Data
 public class PartialCacheConfig<K, V> {

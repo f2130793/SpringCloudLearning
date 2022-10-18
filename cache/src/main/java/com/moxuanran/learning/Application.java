@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * 应用程序
  *
- * @author wutao
- * @date 2022/09/26
+ * @author moxuanran 
+ *  2022/09/26
  */
 @SpringBootApplication
 public class Application {

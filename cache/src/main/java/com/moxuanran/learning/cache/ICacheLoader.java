@@ -9,8 +9,8 @@ import java.util.function.Function;
 /**
  * 缓存加载器
  *
- * @author wutao
- * @date 2020/4/10 19:46
+ * @author moxuanran 
+ * 
  */
 public interface ICacheLoader<K ,V> extends Function<K ,V> {
 

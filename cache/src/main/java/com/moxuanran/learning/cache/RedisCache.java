@@ -18,8 +18,8 @@ import java.util.concurrent.TimeUnit;
 /**
  * Redis缓存
  *
- * @author wutao
- * @date 2020/4/10 15:47
+ * @author moxuanran 
+ * 
  */
 @Slf4j
 public class RedisCache<K, V> extends AbstractCache<K, V> {

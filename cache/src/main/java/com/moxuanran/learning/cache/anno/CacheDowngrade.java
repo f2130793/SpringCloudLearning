@@ -3,8 +3,8 @@ package com.moxuanran.learning.cache.anno;
 import java.lang.annotation.*;
 
 /**
- * @author wutao
- * @date 2020/4/13 17:06
+ * @author moxuanran 
+ * 
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

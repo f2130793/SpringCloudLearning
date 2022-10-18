@@ -4,8 +4,8 @@ package com.moxuanran.learning.cache.config;
 /**
  * 缓存全局配置
  *
- * @author wutao
- * @date 2020/4/10 17:02
+ * @author moxuanran 
+ * 
  */
 public class GlobalCacheConfig {
 

@@ -5,8 +5,8 @@ import lombok.Data;
 import java.io.Serializable;
 
 /**
- * @author wutao
- * @date 2020/4/13 19:32
+ * @author moxuanran 
+ * 
  */
 @Data
 public class CacheValueHolder<V> implements Serializable {

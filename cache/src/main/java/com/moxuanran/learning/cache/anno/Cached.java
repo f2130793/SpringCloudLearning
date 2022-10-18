@@ -8,8 +8,7 @@ import java.lang.annotation.*;
 /**
  * 方法级缓存
  *
- * @author wutao
- * @date 2020/4/13 11:02
+ * @author moxuanran 
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
