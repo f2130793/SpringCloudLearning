@@ -32,6 +32,7 @@
         <module>effective-java</module>
         <module>formatter-spring-boot-starter</module>
         <module>map-struct</module>
+        <module>star-demo</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

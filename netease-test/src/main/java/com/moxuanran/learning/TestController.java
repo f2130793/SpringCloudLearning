@@ -13,9 +13,9 @@ import org.springframework.web.multipart.MultipartFile;
 public class TestController {
     @PostMapping("/upload")
     public String upload(@RequestParam("file") MultipartFile file) throws Exception {
-        String appKey = "";
-        String secret = "";
-        String url = "http://127.0.0.1:8080/common/v1/upload";
+        String appKey = "297b1e9c72bb4c38";
+        String secret = "948479a1e2d54732";
+        String url = "https://openapi.8.163.com/common/v1/upload";
 
         ClientDemo.postFile(appKey,secret,url,file);
         return "";

@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class TestController {
-    @CreateCache(name = "test", cacheType = CacheType.LOCAL, localLimit = 5, defaultLimit = 5)
+    @CreateCache(name = "test", cacheType = CacheType.BOTH, localLimit = 5, defaultLimit = 5)
     private ICache<String, String> cache;
 
     @GetMapping("/get")
