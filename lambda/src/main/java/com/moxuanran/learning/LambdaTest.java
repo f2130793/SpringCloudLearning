@@ -1,6 +1,7 @@
 package com.moxuanran.learning;
 
 import java.util.*;
+import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.*;
 
@@ -33,5 +34,12 @@ public class LambdaTest {
         //分区
         Map<Boolean, List<Dish>> partitionBy = menu.stream().collect(partitioningBy(Dish::isVegetarian));
         System.out.println(partitionBy);
+
+        Integer integer = Stream.of("fa", "hello", "of")
+                .map(String::length)
+                .filter(l -> l <= 3)
+                .max(Comparator.comparingInt(o -> o))
+                .get();
+        System.out.println(integer);
     }
 }
