@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: star-demo
+  redis:
+    password: root
+server:
+  port: 8081
+app: 222
+
+SampleClient:
+  host: http://localhost:8080
+project:
+  basic:
+    host: http://localhost:8080
