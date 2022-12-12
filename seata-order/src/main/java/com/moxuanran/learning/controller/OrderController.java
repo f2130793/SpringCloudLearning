@@ -3,7 +3,8 @@ package com.moxuanran.learning.controller;
 import com.moxuanran.learning.entity.Order;
 import com.moxuanran.learning.service.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,8 +18,8 @@ public class OrderController {
     @Autowired
     private OrderService orderService;
 
-    @GetMapping("/create")
-    public String create(Order order){
+    @PostMapping("/create")
+    public String create(@RequestBody Order order){
         orderService.create(order);
 
         return "订单创建成功";
