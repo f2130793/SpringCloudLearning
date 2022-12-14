@@ -19,6 +19,11 @@ public class OrderService {
     @Autowired
     private RestTemplate restTemplate;
 
+    /**
+     * AT模式演示案例
+     *
+     * @param order 订单
+     */
     @GlobalTransactional(name = "test-create-order",rollbackFor = Exception.class)
     public void create(Order order) {
         System.out.println("--------->下单开始");
