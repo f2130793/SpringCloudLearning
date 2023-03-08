@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: apollo-demo
+app:
+  id: ${spring.application.name}
+apollo:
+  bootstrap:
+    enabled: true
+    namespaces: application,common
+  meta: http://127.0.0.1:8080
+server:
+  port: 8081

@@ -33,6 +33,7 @@
         <module>formatter-spring-boot-starter</module>
         <module>map-struct</module>
         <module>star-demo</module>
+        <module>apollo</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
