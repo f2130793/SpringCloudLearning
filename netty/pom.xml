@@ -13,8 +13,8 @@
     <dependencies>
         <dependency>
             <groupId>io.netty</groupId>
-            <artifactId>netty-transport</artifactId>
-            <version>4.1.50.Final</version>
+            <artifactId>netty-all</artifactId>
+            <version>4.1.68.Final</version>
         </dependency>
     </dependencies>
 
