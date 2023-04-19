@@ -34,11 +34,12 @@
         <module>map-struct</module>
         <module>star-demo</module>
         <module>apollo</module>
+        <module>sa-token</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.3.2.RELEASE</version>
+        <version>2.4.13</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.moxuanran</groupId>
