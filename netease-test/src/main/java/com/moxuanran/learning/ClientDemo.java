@@ -13,14 +13,11 @@ import org.apache.http.client.methods.HttpRequestBase;
 import org.apache.http.entity.ContentType;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.entity.mime.MultipartEntityBuilder;
-import org.apache.http.entity.mime.content.FileBody;
-import org.apache.http.entity.mime.content.StringBody;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.EntityUtils;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.io.File;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -38,7 +35,7 @@ public class ClientDemo {
     private static final String HEADER_CA_SIGNATURE_HEADERS = "x-ca-signature-headers";
     private static final String HEADER_CA_SIGNATURE = "x-ca-signature";
 
-    private static void addSign(HttpRequestBase httpRequest,
+    public static void addSign(HttpRequestBase httpRequest,
                                 String appKey,
                                 String secret,
                                 String httpMethod,
@@ -68,7 +65,7 @@ public class ClientDemo {
         httpRequest.addHeader(HEADER_CA_SIGNATURE_HEADERS, StringUtils.join(signatureHeaders, ","));
     }
 
-    private static void get(String appKey, String secret, String url) throws Exception {
+    public static void get(String appKey, String secret, String url) throws Exception {
         HttpGet httpRequest = new HttpGet(url);
         String query = url.substring(url.indexOf("?") + 1);
         Map<String, String[]> map = new HashMap<>();
@@ -84,7 +81,7 @@ public class ClientDemo {
         System.out.println("response:" + EntityUtils.toString(r.getEntity(), StandardCharsets.UTF_8));
     }
 
-    private static void postJson(String appKey, String secret, String url, String body) throws Exception {
+    public static void postJson(String appKey, String secret, String url, String body) throws Exception {
         HttpPost httpRequest = new HttpPost(url);
         httpRequest.addHeader("content-type", APPLICATION_JSON);
         addSign(httpRequest, appKey, secret, "POST", url, body, null);

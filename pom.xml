@@ -35,6 +35,7 @@
         <module>star-demo</module>
         <module>apollo</module>
         <module>sa-token</module>
+        <module>elasticsearch</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
