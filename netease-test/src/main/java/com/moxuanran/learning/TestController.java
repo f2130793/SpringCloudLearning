@@ -46,9 +46,14 @@ public class TestController {
 
     @PostMapping("/upload")
     public String upload(@RequestParam("file") MultipartFile file) throws Exception {
-        String appKey = "297b1e9c72bb4c38";
-        String secret = "948479a1e2d54732";
-        String url = "https://openapi.8.163.com/common/v1/upload";
+//线上
+        //        String appKey = "297b1e9c72bb4c38";
+//        String secret = "948479a1e2d54732";
+//        String url = "https://openapi.8.163.com/common/v1/upload";
+//测试
+        String appKey = "6840934a87cf4ad6";
+        String secret = "cbff127c8ace4bc3";
+        String url = "https://bcgateway-test.apps-qa.danlu.netease.com/common/v1/upload/private";
 
         ClientDemo.postFile(appKey, secret, url, file);
         return "";
